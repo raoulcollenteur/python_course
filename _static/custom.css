@@ -1,0 +1,36 @@
+.profile-photo {
+    border-radius: 80%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 5%;
+}
+
+.schedule-table {
+    margin-top: 0.75rem;
+}
+
+.schedule-table.docutils {
+    border: none;
+}
+
+.schedule-table.docutils td,
+.schedule-table.docutils th {
+    border: none;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0.6rem 0.4rem;
+    vertical-align: top;
+}
+
+.schedule-table.docutils td:first-child {
+    white-space: nowrap;
+}
+
+.schedule-table.docutils tr:last-child td {
+    border-bottom: none;
+}
+
+.sd-card-header {
+    font-weight: 600;
+}
