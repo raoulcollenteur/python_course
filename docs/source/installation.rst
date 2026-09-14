@@ -67,5 +67,5 @@ If both commands are available, prefer ``python`` in the examples in
 this documentation.
 
 
-Continue to :doc:`running_python` to run Python interactively, execute
+Continue to :doc:`jupyter_notebook` to run Python interactively, execute
 scripts, and create a virtual environment.
