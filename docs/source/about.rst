@@ -28,49 +28,81 @@ demonstrations, and hands-on exercises.
 
   **Python and groundwater time-series analysis**
 
-  .. list-table::
-     :widths: 25 100
-     :class: schedule-table
+  .. card:: 💧 Day 1
+   :class-card: sd-shadow-sm
+   :class-header: sd-bg-primary sd-text-white
 
-     * - **09:00–10:30**
-       - Introduction to Python
-     * - **10:30–10:45**
-       - ☕ Coffee break
-     * - **10:45–12:00**
-       - Python basics
-     * - **12:00–13:00**
-       - 🍽️ Lunch break
-     * - **13:00–14:30**
-       - Groundwater time-series analysis in Python
-     * - **14:30–14:45**
-       - ☕ Coffee break
-     * - **14:45–16:00**
-       - 💻 Hands-on exercises
+   **Python and groundwater monitoring with gwrefpy**
+
+   .. list-table::
+      :widths: 25 100
+      :class: schedule-table
+
+      * - **08:00–08:30**
+        - 🍳 Breakfast
+      * - **08:30–08:40**
+        - Welcome (presentation)
+      * - **08:40–09:00**
+        - Setting up Python, uv, and JupyterLab (live demonstration)
+      * - **09:00–10:00**
+        - Introduction to Python (notebook)
+      * - **10:00–10:15**
+        - ☕ Coffee break
+      * - **10:15–11:30**
+        - Introduction to Python packages and pandas (presentation + notebook)
+      * - **11:30–12:00**
+        - 💻 Pandas exercise
+      * - **12:00–13:15**
+        - 🍽️ Lunch break
+      * - **13:15–14:00**
+        - Introduction to groundwater monitoring and gwrefpy (presentation)
+      * - **14:00–14:30**
+        - 💻 gwrefpy exercises
+      * - **14:30–15:00**
+        - ☕ Fika
+      * - **15:00–16:00**
+        - 💻 gwrefpy exercises (continued)
+      * - **16:00–16:30**
+        - 🚀 Cool stuff with Python! (short presentations and examples)
+      * - **16:30–Late**
+        - 🍻 Social gathering
 
 .. card:: 💧 Day 2
-  :class-card: sd-shadow-sm
-  :class-header: sd-bg-primary sd-text-white
+   :class-card: sd-shadow-sm
+   :class-header: sd-bg-primary sd-text-white
 
-  **Groundwater flow and transport modelling**
+   **Advanced groundwater time-series analysis with Pastas**
 
-  .. list-table::
-     :widths: 25 100
-     :class: schedule-table
+   .. list-table::
+      :widths: 25 100
+      :class: schedule-table
 
-     * - **09:00–10:30**
-       - Introduction to groundwater modelling
-     * - **10:30–10:45**
-       - ☕ Coffee break
-     * - **10:45–12:00**
-       - Analytic Element Method (AEM)
-     * - **12:00–13:00**
-       - 🍽️ Lunch break
-     * - **13:00–14:30**
-       - Discrete Fracture Networks (DFN)
-     * - **14:30–14:45**
-       - ☕ Coffee break
-     * - **14:45–16:00**
-       - 💻 Hands-on exercises
+      * - **08:00–08:30**
+        - 🍳 Breakfast
+      * - **08:30–09:00**
+        - Recap of Day 1
+      * - **09:00–10:00**
+        - Impulse response functions
+      * - **10:00–10:30**
+        - 💻 Notebook exercise 1
+      * - **10:30–10:45**
+        - ☕ Coffee break
+      * - **10:45–11:30**
+        - Different stress models
+      * - **11:30–12:00**
+        - 💻 Notebook exercise 2
+      * - **12:00–13:15**
+        - 🍽️ Lunch break
+      * - **13:15–14:00**
+        - Nonlinear recharge
+      * - **14:00–14:30**
+        - 💻 Notebook exercise 3
+      * - **14:30–15:00**
+        - ☕ Fika
+      * - **15:00–16:00**
+        - 💻 Hands-on exercises and model building
+      * - **16:00–16:30**
+        - 🚀 Cool stuff with Python! Part 2
 
 .. note::
 
