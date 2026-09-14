@@ -38,18 +38,21 @@ html_theme_options = {
     "sticky_navigation": True,
 }
 
-# -- Copy the notebook files to the build directory --------------------------------------
-# This will copy the notebook files to the build directory so that they can be accessed from the documentation.
+# -- Zip the notebook files for download ------------------------------------------------
+# This will create a zip file of the notebook files so that they can be downloaded from the documentation.
 from pathlib import Path
-import shutil
+import zipfile
 
 HERE = Path(__file__).parent
 
 download_dir = HERE / "downloads"
 download_dir.mkdir(parents=True, exist_ok=True)
 
-for notebook in HERE.rglob("*.ipynb"):
-    if "downloads" not in notebook.parts:
-        shutil.copy2(notebook, download_dir / notebook.name)
+notebooks_zip = download_dir / "notebooks.zip"
+
+with zipfile.ZipFile(notebooks_zip, "w", zipfile.ZIP_DEFLATED) as zf:
+    for notebook in HERE.rglob("*.ipynb"):
+        if "downloads" not in notebook.parts:
+            zf.write(notebook, arcname=notebook.name)
 
 html_extra_path = ["downloads"]
