@@ -31,6 +31,10 @@ jobs:
         cd docs/
         uv run make html
     
+    - name: Debug build output
+      run: |
+        find docs -type f | grep index.html
+    
     - name: Deploy documentation to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
