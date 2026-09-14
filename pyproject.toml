@@ -6,7 +6,7 @@ readme = "README.md"
 authors = [
     { name = "Erik-Toller_wsp", email = "erik.toller@wsp.com" }
 ]
-requires-python = ">=3.11"
+requires-python = ">=3.12"
 dependencies = [
     "gwrefpy>=0.4.1",
     "jupyterlab>=4.6.3",
