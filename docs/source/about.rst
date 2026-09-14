@@ -23,49 +23,43 @@ The course consists of two full days combining short lectures,
 demonstrations, and hands-on exercises.
 
 .. card:: 🐍 Day 1
-  :class-card: sd-shadow-sm
-  :class-header: sd-bg-primary sd-text-white
+:class-card: sd-shadow-sm
+:class-header: sd-bg-primary sd-text-white
 
-  **Python and groundwater time-series analysis**
+**Python and groundwater monitoring with gwrefpy**
 
-  .. card:: 💧 Day 1
-   :class-card: sd-shadow-sm
-   :class-header: sd-bg-primary sd-text-white
+.. list-table::
+  :widths: 25 100
+  :class: schedule-table
 
-   **Python and groundwater monitoring with gwrefpy**
-
-   .. list-table::
-      :widths: 25 100
-      :class: schedule-table
-
-      * - **08:00–08:30**
-        - 🍳 Breakfast
-      * - **08:30–08:40**
-        - Welcome (presentation)
-      * - **08:40–09:00**
-        - Setting up Python, uv, and JupyterLab (live demonstration)
-      * - **09:00–10:00**
-        - Introduction to Python (notebook)
-      * - **10:00–10:15**
-        - ☕ Coffee break
-      * - **10:15–11:30**
-        - Introduction to Python packages and pandas (presentation + notebook)
-      * - **11:30–12:00**
-        - 💻 Pandas exercise
-      * - **12:00–13:15**
-        - 🍽️ Lunch break
-      * - **13:15–14:00**
-        - Introduction to groundwater monitoring and gwrefpy (presentation)
-      * - **14:00–14:30**
-        - 💻 gwrefpy exercises
-      * - **14:30–15:00**
-        - ☕ Fika
-      * - **15:00–16:00**
-        - 💻 gwrefpy exercises (continued)
-      * - **16:00–16:30**
-        - 🚀 Cool stuff with Python! (short presentations and examples)
-      * - **16:30–Late**
-        - 🍻 Social gathering
+  * - **08:00–08:30**
+    - 🍳 Breakfast
+  * - **08:30–08:40**
+    - Welcome (presentation)
+  * - **08:40–09:00**
+    - Setting up Python, uv, and JupyterLab (live demonstration)
+  * - **09:00–10:00**
+    - Introduction to Python (notebook)
+  * - **10:00–10:15**
+    - ☕ Coffee break
+  * - **10:15–11:30**
+    - Introduction to Python packages and pandas (presentation + notebook)
+  * - **11:30–12:00**
+    - 💻 Pandas exercise
+  * - **12:00–13:15**
+    - 🍽️ Lunch break
+  * - **13:15–14:00**
+    - Introduction to groundwater monitoring and gwrefpy (presentation)
+  * - **14:00–14:30**
+    - 💻 gwrefpy exercises
+  * - **14:30–15:00**
+    - ☕ Fika
+  * - **15:00–16:00**
+    - 💻 gwrefpy exercises (continued)
+  * - **16:00–16:30**
+    - 🚀 Cool stuff with Python! (short presentations and examples)
+  * - **16:30–Late**
+    - 🍻 Social gathering
 
 .. card:: 💧 Day 2
    :class-card: sd-shadow-sm
