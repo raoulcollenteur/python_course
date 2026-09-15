@@ -40,22 +40,30 @@ Start by going to the directory where you want to create your course environment
 
 
 Then, install `uv` by running the following command in your terminal or command prompt:
+
 .. code-block:: powershell
+
     pip install uv
 
 
 Once `uv` is installed, you can create a new environment by navigating to the course directory and running the following command:
+
 .. code-block:: powershell
+
     uv venv .venv
 
 
 Once the environment has been created we will install the required packages for this course, including Jupyter Lab, by running:
+
 .. code-block:: powershell
+
     uv pip install jupyterlab gwrefpy pastas tqdm ipywidgets tornado==6.4.2
 
 
 After installation, active the environment by running:
+
 .. code-block:: powershell
+
     .venv/Scripts/activate
 
 
@@ -64,7 +72,9 @@ After installation, active the environment by running:
 
 
 and start Jupyter Lab by running:
+
 .. code-block:: powershell
+
     jupyter lab
 
 An instance of Jupyter Lab will open in your default web browser, where you can create new notebooks or open existing ones.
