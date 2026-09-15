@@ -68,7 +68,7 @@ After installation, active the environment by running:
 
 
 .. note::
-   If you are using Command Prompt, you may need quotes around the command, use `".\.venv\Scripts\activate"` instead.
+   If you are using Command Prompt, you may need quotes around the command, use ".\.venv\Scripts\activate" instead.
 
 
 and start Jupyter Lab by running:
