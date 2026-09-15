@@ -79,6 +79,6 @@ and start Jupyter Lab by running:
 
 An instance of Jupyter Lab will open in your default web browser, where you can create new notebooks or open existing ones.
 
-Additional information on installing and using Jupyter Lab can be found in the [official documentation](https://jupyter.org/install).
+Additional information on installing and using Jupyter Lab can be found in the `official docmumentation <https://jupyter.org/install>`_.
 
 Continue to :doc:`jupyter_notebooks` to run the final checks.
