@@ -124,35 +124,30 @@ for installations obtained directly from the Python project.</p>
 <p class="admonition-title">Tip</p>
 <p>You can open a terminal in the desired directory by holding down the <strong>Shift</strong> key, right-clicking in the folder, and selecting <strong>Open PowerShell window here</strong>. Or by typing <cite>cmd</cite> in the address bar of the folder and pressing <strong>Enter</strong>.</p>
 </div>
-<p>Then, install <cite>uv</cite> by running the following command in your terminal or command prompt:
-.. code-block:: powershell</p>
-<blockquote>
-<div><p>pip install uv</p>
-</div></blockquote>
-<p>Once <cite>uv</cite> is installed, you can create a new environment by navigating to the course directory and running the following command:
-.. code-block:: powershell</p>
-<blockquote>
-<div><p>uv venv .venv</p>
-</div></blockquote>
-<p>Once the environment has been created we will install the required packages for this course, including Jupyter Lab, by running:
-.. code-block:: powershell</p>
-<blockquote>
-<div><p>uv pip install jupyterlab gwrefpy pastas tqdm ipywidgets tornado==6.4.2</p>
-</div></blockquote>
-<p>After installation, active the environment by running:
-.. code-block:: powershell</p>
-<blockquote>
-<div><p>.venv/Scripts/activate</p>
-</div></blockquote>
+<p>Then, install <cite>uv</cite> by running the following command in your terminal or command prompt:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">uv</span>
+</pre></div>
+</div>
+<p>Once <cite>uv</cite> is installed, you can create a new environment by navigating to the course directory and running the following command:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">uv</span> <span class="n">venv</span> <span class="p">.</span><span class="n">venv</span>
+</pre></div>
+</div>
+<p>Once the environment has been created we will install the required packages for this course, including Jupyter Lab, by running:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">uv</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">jupyterlab</span> <span class="n">gwrefpy</span> <span class="n">pastas</span> <span class="n">tqdm</span> <span class="n">ipywidgets</span> <span class="n">tornado</span><span class="p">==</span><span class="n">6</span><span class="p">.</span><span class="n">4</span><span class="p">.</span><span class="n">2</span>
+</pre></div>
+</div>
+<p>After installation, active the environment by running:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="p">.</span><span class="n">venv</span><span class="p">/</span><span class="n">Scripts</span><span class="p">/</span><span class="n">activate</span>
+</pre></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you are using Command Prompt, you may need quotes around the command, use <cite>“..venvScriptsactivate”</cite> instead.</p>
 </div>
-<p>and start Jupyter Lab by running:
-.. code-block:: powershell</p>
-<blockquote>
-<div><p>jupyter lab</p>
-</div></blockquote>
+<p>and start Jupyter Lab by running:</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span> <span class="n">lab</span>
+</pre></div>
+</div>
 <p>An instance of Jupyter Lab will open in your default web browser, where you can create new notebooks or open existing ones.</p>
 <p>Additional information on installing and using Jupyter Lab can be found in the [official documentation](<a class="reference external" href="https://jupyter.org/install">https://jupyter.org/install</a>).</p>
 <p>Continue to <a class="reference internal" href="jupyter_notebooks.html"><span class="doc">Jupyter Notebooks</span></a> to run the final checks.</p>
