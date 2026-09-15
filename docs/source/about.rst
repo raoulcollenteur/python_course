@@ -139,7 +139,7 @@ We who will be giving the course are:
    .. grid-item::
       :columns: 4
 
-      .. image:: _static/erik_toller.jpg
+      .. image:: _static/anders_retzner.jpeg
          :class: profile-photo
 
    .. grid-item::
@@ -147,7 +147,10 @@ We who will be giving the course are:
 
       **Anders Retzner**
 
-      Hello there ...
+      Anders Retzner works as a hydrologist at SMHI maintaining and developing real-time hydrological forecasts for hydropower, water supply management, and more. He comes from a background in similar work but with regards to groundwater hydrology at the Geological Survey of Sweden and WSP. He still works in groundwater assignments and projects related to groundwater. Anders uses python for data analysis, modeling and visualization in his daily work.
+
+      Anders is one of the developers of the Python package ``gwrefpy`` and the
+      main developer of the ``sgu-client`` package.
 
 .. grid:: 12
    :gutter: 1
