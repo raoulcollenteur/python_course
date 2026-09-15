@@ -58,16 +58,13 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installing Python</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="installation.html#before-installing-python">Before installing Python</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation.html#installing-python-on-windows">Installing Python on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="installation.html#getting-started">Getting Started</a></li>
 </ul>
 </li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Jupyter Notebooks</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#install-uv">Install uv</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#last-check">Last check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-notebook">Create a notebook</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#write-the-code">Write the code</a></li>
 </ul>
 </li>
 </ul>
@@ -100,42 +97,18 @@
 <h1>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Link to this heading"></a></h1>
 <p>Jupyter Notebooks combine explanatory text and executable Python code in a single document. Most exercises and examples in this course will be provided as Jupyter Notebooks, allowing participants to modify code, rerun calculations, and immediately visualize the results.</p>
 <p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary reference external" href="notebooks.zip"><span>📥 Download notebook</span></a></p>
-<section id="getting-started">
-<h2>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h2>
-<p>This course uses <code class="docutils literal notranslate"><span class="pre">uv</span></code> to manage Python packages and environments.</p>
-<section id="install-uv">
-<h3>Install uv<a class="headerlink" href="#install-uv" title="Link to this heading"></a></h3>
-<p>Start by going to the directory where you want to create your course environment.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can open a terminal in the desired directory by holding down the <strong>Shift</strong> key, right-clicking in the folder, and selecting <strong>Open PowerShell window here</strong>. Or by typing <code class="docutils literal notranslate"><span class="pre">cmd</span></code> in the address bar of the folder and pressing <strong>Enter</strong>.</p>
-</div>
-<p>Then, install <code class="docutils literal notranslate"><span class="pre">uv</span></code> by running the following command in your terminal or command prompt:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>uv
-</pre></div>
-</div>
-<p>Once <code class="docutils literal notranslate"><span class="pre">uv</span></code> is installed, you can create a new environment by navigating to the course directory and running the following command:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>venv<span class="w"> </span>.venv
-</pre></div>
-</div>
-<p>Once the environment has been created we will install the required packages for this course, including Jupyter Lab, by running:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>jupyterlab<span class="w"> </span>gwrefpy<span class="w"> </span>pastas
-</pre></div>
-</div>
-<p>After installation, you can start Jupyter Lab by running:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jupyter<span class="w"> </span>lab
-</pre></div>
-</div>
-<p>An instance of Jupyter Lab will open in your default web browser, where you can create new notebooks or open existing ones.</p>
-<p>Additional information on installing and using Jupyter Lab can be found in the <a class="reference external" href="https://jupyter.org/install">official documentation</a>.</p>
+<section id="create-a-notebook">
+<h2>Create a notebook<a class="headerlink" href="#create-a-notebook" title="Link to this heading"></a></h2>
+<p>To create a new Jupyter Notebook in Jupyter Lab, click on the “Python 3” button in the “Notebook” section of the launcher. This will open a new notebook with an empty code cell where you can start writing your Python code.</p>
+<p><img alt="Creating a new notebook" src="_images/notebook_init.png" /></p>
 </section>
-</section>
-<section id="last-check">
-<h2>Last check<a class="headerlink" href="#last-check" title="Link to this heading"></a></h2>
-<p>Before starting the course, we need to ensure that you have the required packages installed. You can check this by running the following code snippet in a Jupyter Notebook cell:</p>
+<section id="write-the-code">
+<h2>Write the code<a class="headerlink" href="#write-the-code" title="Link to this heading"></a></h2>
+<p>You can write Python code in the code cells of the notebook. To execute the code in a cell, you can either click the “Run” button in the toolbar or press <code class="docutils literal notranslate"><span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">Enter</span></code>. The output of the code will be displayed directly below the cell.</p>
+<p>Before the course start, check that you have the required packages installed. You can do this by running the following code in a notebook cell:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">gwrefpy</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">gwrefpy</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">pastas</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"gwrefpy version:"</span><span class="p">,</span> <span class="n">gwrefpy</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
@@ -144,16 +117,60 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>gwrefpy version: 0.4.1
-pastas version: 2.0.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Failed to extract font properties from /usr/share/fonts/truetype/noto/NotoColorEmoji.ttf: Non-scalable fonts are not supported
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\seet92866\PycharmProjects\python_gwrefpy_pastas_course\.venv\Lib\site-packages\tqdm\auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
-  from .autonotebook import tqdm as notebook_tqdm
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>generated new fontManager
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ImportError</span><span class="g g-Whitespace">                               </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">2</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="kn">import</span><span class="w"> </span><span class="nn">gwrefpy</span>
+<span class="ne">----&gt; </span><span class="mi">2</span> <span class="kn">import</span><span class="w"> </span><span class="nn">pastas</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> 
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"gwrefpy version:"</span><span class="p">,</span> <span class="n">gwrefpy</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"pastas version:"</span><span class="p">,</span> <span class="n">pastas</span><span class="o">.</span><span class="n">__version__</span><span class="p">)</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">work</span><span class="o">/</span><span class="n">python_course</span><span class="o">/</span><span class="n">python_course</span><span class="o">/.</span><span class="n">venv</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">pastas</span><span class="o">/</span><span class="fm">__init__</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">40</span>
+<span class="g g-Whitespace">     </span><span class="mi">27</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pastas.rcparams</span><span class="w"> </span><span class="kn">import</span> <span class="n">rcParams</span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pastas.rfunc</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">29</span>     <span class="n">DoubleExponential</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span>     <span class="n">Exponential</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>     <span class="mi">38</span>     <span class="n">Spline</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">39</span> <span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">40</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pastas.solver</span><span class="w"> </span><span class="kn">import</span> <span class="n">objective</span><span class="p">,</span> <span class="n">timer</span>
+<span class="g g-Whitespace">     </span><span class="mi">41</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pastas.solver.trackers</span><span class="w"> </span><span class="kn">import</span> <span class="n">TrackSolve</span>
+<span class="g g-Whitespace">     </span><span class="mi">42</span> <span class="kn">from</span><span class="w"> </span><span class="nn">pastas.stressmodels</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+<span class="g g-Whitespace">     </span><span class="mi">43</span>     <span class="n">ChangeModel</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">44</span>     <span class="n">Constant</span><span class="p">,</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>     <span class="mi">50</span>     <span class="n">WellModel</span><span class="p">,</span>
+<span class="g g-Whitespace">     </span><span class="mi">51</span> <span class="p">)</span>
+
+<span class="n">File</span> <span class="o">~/</span><span class="n">work</span><span class="o">/</span><span class="n">python_course</span><span class="o">/</span><span class="n">python_course</span><span class="o">/.</span><span class="n">venv</span><span class="o">/</span><span class="n">lib</span><span class="o">/</span><span class="n">python3</span><span class="mf">.12</span><span class="o">/</span><span class="n">site</span><span class="o">-</span><span class="n">packages</span><span class="o">/</span><span class="n">pastas</span><span class="o">/</span><span class="n">solver</span><span class="o">/</span><span class="n">timer</span><span class="o">.</span><span class="n">py</span><span class="p">:</span><span class="mi">41</span>
+<span class="g g-Whitespace">     </span><span class="mi">39</span> <span class="k">except</span> <span class="ne">ImportError</span><span class="p">:</span>
+<span class="g g-Whitespace">     </span><span class="mi">40</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">"SolveTimer requires 'tqdm' to be installed."</span>
+<span class="ne">---&gt; </span><span class="mi">41</span>     <span class="k">raise</span> <span class="ne">ImportError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="kc">None</span>
+<span class="g g-Whitespace">     </span><span class="mi">44</span> <span class="k">class</span><span class="w"> </span><span class="nc">SolveTimer</span><span class="p">(</span><span class="n">tqdm</span><span class="p">):</span>
+<span class="g g-Whitespace">     </span><span class="mi">45</span><span class="w">     </span><span class="sd">"""Progress indicator for model optimization.</span>
+<span class="g g-Whitespace">     </span><span class="mi">46</span><span class="sd"> </span>
+<span class="g g-Whitespace">     </span><span class="mi">47</span><span class="sd">     Notes</span>
+<span class="sd">   (...)     61         Optimization progress: 73it [00:01, 67.68it/s]</span>
+<span class="g g-Whitespace">     </span><span class="mi">62</span><span class="sd">     """</span>
+
+<span class="ne">ImportError</span>: SolveTimer requires 'tqdm' to be installed.
 </pre></div>
 </div>
 </div>
 </div>
+<p>Your notebook should run without any errors. If you encounter any issues, please contact the course instructors for assistance.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you are using a virtual environment, make sure that you have activated it before opening Jupyter Lab. If you follow the instructions in the “Installation” section, you should have a working environment with all the required packages installed and your environment activated.</p>
+<p>It migth take a few seconds for the packages to load, so please be patient.</p>
+</div>
+<p>The result of the code cell should look like this:</p>
+<p><img alt="Running your notebook" src="_images/notebook_comp.png" /></p>
 </section>
 </section>
 
