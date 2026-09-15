@@ -26,14 +26,14 @@ jobs:
     - name: Install build dependencies  # ADD THIS STEP
       run: uv sync --all-extras       
 
+    - name: Build matplotlib font cache
+      run: |
+        uv run python -c "import matplotlib.pyplot as plt"
+
     - name: Build HTML
       run: | 
         cd docs/
         uv run make html
-    
-    - name: Debug build output
-      run: |
-        find docs -type f | grep index.html
     
     - name: Deploy documentation to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
