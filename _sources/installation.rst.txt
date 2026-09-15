@@ -65,11 +65,11 @@ uv pip install jupyterlab gwrefpy pastas tqdm ipywidgets tornado==6.4.2
 
 After installation, active the environment by running:
 ```bash
-".venv/Scripts/activate"
+.venv/Scripts/activate
 ```
 
 ```{note}
-   If you are using PowerShell, you may not need the quotes around the command can can use `.\.venv\Scripts\activate` instead.
+   If you are using Command Prompt, you may need quotes around the command, use `".\.venv\Scripts\activate"` instead.
 ```
 
 and start Jupyter Lab by running:
