@@ -6,13 +6,7 @@
    "metadata": {},
    "source": [
     "# Jupyter Notebooks\n",
-    "Jupyter Notebooks combine explanatory text and executable Python code in a single document. Most exercises and examples in this course will be provided as Jupyter Notebooks, allowing participants to modify code, rerun calculations, and immediately visualize the results.\n",
-    "\n",
-    "```{button-link} notebooks.zip\n",
-    ":color: primary\n",
-    "\n",
-    "📥 Download notebook\n",
-    "```"
+    "Jupyter Notebooks combine explanatory text and executable Python code in a single document. Most exercises and examples in this course will be provided as Jupyter Notebooks, allowing participants to modify code, rerun calculations, and immediately visualize the results."
    ]
   },
   {
